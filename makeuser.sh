@@ -31,3 +31,6 @@ echo "UserID:" $newuser "has been created with the following password:" $randomp
 
 sudo -u $newuser -H sh -c "cd /home/$newuser; ssh-keygen -f file.rsa -t rsa -N ''"
 echo "UserID:" $newuser "has a new SSH public and private key located at /home/"$newuser
+
+echo "Private key is as follows:"
+cat "/home/"$newuser"/file.rsa"
