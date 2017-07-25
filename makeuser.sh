@@ -3,6 +3,11 @@
 ####
 # This script automatically creates user accounts with random passwords.
 # It also switches to the user and creates an SSH key
+# 
+# Note, you must place this file inside the visudo directory so it can be run without elevation.
+# example: sudo visudo
+# 
+# user ALL = NOPASSWD: /home/user/makeuser.sh
 ###
  
 if [ $# -lt 1 ]; then
